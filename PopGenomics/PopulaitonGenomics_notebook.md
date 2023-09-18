@@ -23,8 +23,8 @@
 
 ### Entry 1: 2023-09-11.   
 
-- We reviewed the red spruce study systen and the exome capture data
-- We discussed the structure of fastq files (dna sequene, pkus the Q scores)
+- We reviewed the red spruce study system and the exome capture data
+- We discussed the structure of fastq files (dna sequence, plus the Q scores)
 - Using the program fastqc, we analyzed the quality of the sequencing runs
 
 
@@ -36,9 +36,9 @@
 
 - After discussing ht FastQC results, we saw good quality sequence data for most of the read length
 - The initial 5 bp were discarded bc they had a more variable base frequencies, and the very end had slightly lower Q-scored
-- Based on this we set up an analysis to trim th ereads using the `fastp` program
+- Based on this we set up an analysis to trim the reads using the `fastp` program
 - We ran the bash script `fastp.sh` for this
-- We looked at the html files prud ed by `fastp` and compared pre and post trimming -- things looked good!
+- We looked at the html files pruned by `fastp` and compared pre and post trimming -- things looked good!
 - We ended the day setting up our read mapping of the trimmed and cleaned reads using `bwa`
 
 
