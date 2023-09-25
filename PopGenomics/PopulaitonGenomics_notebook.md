@@ -17,6 +17,8 @@
 -   [Entry 1: 2023-09-11](#id-section1)
 -   [Entry 2: 2023-09-13](#id-section2)
 -   [Entry 3: 2023-09-18](#id-section3)
+-   [Entry 4: 2023-09-20](#id-section4)
+-   [Entry 5: 2023-09-25](#id-section5)
 
 ------    
 <div id='id-section1'/> 
@@ -46,4 +48,18 @@
 <div id='id-section3'/>   
 
 
-### Entry 3: 2023-XX-XX.
+### Entry 3: 2023-09-18.
+
+- After conducting
+
+------    
+<div id='id-section4'/>   
+
+
+### Entry 3: 2023-09-20.
+
+------    
+<div id='id-section5'/>   
+
+
+### Entry 3: 2023-09-25.
