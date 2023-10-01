@@ -19,6 +19,7 @@
 -   [Entry 3: 2023-09-18](#id-section3)
 -   [Entry 4: 2023-09-20](#id-section4)
 -   [Entry 5: 2023-09-25](#id-section5)
+-   [Entry 6: 2023-09-27](#id-section6)
 
 ------    
 <div id='id-section1'/> 
@@ -50,7 +51,13 @@
 
 ### Entry 3: 2023-09-18.
 
-- After conducting
+- After conducting the SAM (sequence alignment) files we processed our map files
+- Using `sambamba` and `samtools`
+- We converted the sam files to bam format
+- Sorting the bam files by its read coordinates
+- Mark and remove PCR duplicates
+- The sorted, cleaned and index files were moved to a place for easy/quick look up
+
 
 ------    
 <div id='id-section4'/>   
@@ -58,8 +65,34 @@
 
 ### Entry 3: 2023-09-20.
 
+- Using `flagstat` we calculated how well the reads mapped to the reference
+- `depth` (a samtools command) to estimate depth coverage (average reads/site)
+- Using those two commands in a loop to sample our individual populations (I had group 2020, for example)
+- `awk` was used to format the output
+- We started working on the `ANGSD` code in vim
+- Running the code to estimate genotype likelihoods for our populations.
+
+
 ------    
 <div id='id-section5'/>   
 
 
 ### Entry 3: 2023-09-25.
+
+- Our code finished running and they were input into our local directories ("saf" means site allele frequency)
+- We created the `ANGSD_doTheta.sh`to estimate SFS (site frequency spectrum) and nucleotide diversity stats 
+
+
+------    
+<div id='id-section6'/>   
+
+
+### Entry 3: 2023-09-27.
+
+- Using ANGSD and nucleotide diversity stats to caluclate divergence between populations (Fst) (red spruce and the black spruce reference genomes and the populations thru the NE)
+- PCA and Admixture were used to visualize the population structure
+- `pcANGSD` was used and the results were moved with Filezilla to R
+- Using R script, we visualized the PCA and admixture with four figures
+
+
+------    

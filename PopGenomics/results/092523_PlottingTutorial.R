@@ -18,7 +18,7 @@ head(theta[order(theta$Tajima, decreasing = TRUE),]) # top 10 Tajima's D values
 head(theta[order(theta$Tajima, decreasing = FALSE),]) # bottom 10 Tajima's D values
 
 #You can also look for contigs that have combinations of high Tajima's D and low diversity -- these could represent outliers for selection
-#theta[which(theta$Tajima>1.5 & theta$tPsite<0.001),]
+theta[which(theta$Tajima>1.5 & theta$tPsite<0.001),]
 
 
 sfs<-scan('2020_.sfs')
