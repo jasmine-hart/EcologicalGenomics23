@@ -20,6 +20,8 @@
 -   [Entry 4: 2023-09-20](#id-section4)
 -   [Entry 5: 2023-09-25](#id-section5)
 -   [Entry 6: 2023-09-27](#id-section6)
+-   [Entry 7: 2023-10-02](#id-section7)
+-   [Entry 8: 2023-10-04](#id-section8)
 
 ------    
 <div id='id-section1'/> 
@@ -63,7 +65,7 @@
 <div id='id-section4'/>   
 
 
-### Entry 3: 2023-09-20.
+### Entry 4: 2023-09-20.
 
 - Using `flagstat` we calculated how well the reads mapped to the reference
 - `depth` (a samtools command) to estimate depth coverage (average reads/site)
@@ -77,7 +79,7 @@
 <div id='id-section5'/>   
 
 
-### Entry 3: 2023-09-25.
+### Entry 5: 2023-09-25.
 
 - Our code finished running and they were input into our local directories ("saf" means site allele frequency)
 - We created the `ANGSD_doTheta.sh`to estimate SFS (site frequency spectrum) and nucleotide diversity stats 
@@ -87,7 +89,7 @@
 <div id='id-section6'/>   
 
 
-### Entry 3: 2023-09-27.
+### Entry 6: 2023-09-27.
 
 - Using ANGSD and nucleotide diversity stats to caluclate divergence between populations (Fst) (red spruce and the black spruce reference genomes and the populations thru the NE)
 - PCA and Admixture were used to visualize the population structure
@@ -96,3 +98,22 @@
 
 
 ------    
+<div id='id-section7'/>   
+
+
+### Entry 7: 2023-10-02.
+
+- We used `pcANGSD` to scan Fst for outliers and to identify significant outliers
+- Also identifying minor allele loci
+- Exporting this info to R in order to visualize this in an easily digestible manner.
+- Also explored plantgenie for signicant loci
+
+------    
+<div id='id-section8'/>   
+
+
+### Entry 8: 2023-10-04.
+- We ran GEA association with imported BioClim data to investigate
+- We used the same `pcANGSD` results with the bioclim info
+- Plotting it using R
+- Then transferring it back to bash to identify significant loci.

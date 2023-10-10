@@ -1,18 +1,19 @@
 setwd("/Users/jasminehart/Documents/GitHub/EcologicalGenomics23/PopGenomics/results/")
 
+ggplot()
 list.files()
 
 ## First, let's work on the genetic PCA:
 
 COV <- as.matrix(read.table("allRS_poly.cov")) # read in the genetic covariance matrix
 
-PCA <- eigen(COV) # extract the principal components from the COV matrix
+PCA <- eigen(COV) # extract the principal components from the COV matrix there are 95 PCs
 
 ## How much variance is explained by the first few PCs?
 
-var <- round(PCA$values/sum(PCA$values),3)
+var <- round(PCA$values/sum(PCA$values),2)
 
-var[1:3]
+var[1:2]
 
 # A "screeplot" of the eigenvalues of the PCA:
 
@@ -68,10 +69,10 @@ ggscatter(data, x = "V1", y = "V2",
 
 q <- read.table("allRS_poly.admix.2.Q", sep=" ", header=F)
 
-K=dim(q)[2] #Find the level of K modeled
+K=dim(q)[3] #Find the level of K modeled
 
 ## order according to population code
-ord<-order(pops[,2])
+ord<-order(pops[,1])
 
 # make the plot:
 barplot(t(q)[,ord],
@@ -80,4 +81,5 @@ barplot(t(q)[,ord],
         xlab="Populations",ylab="Admixture proportions",
         main=paste0("Red spruce K=",K))
 text(tapply(1:nrow(pops),pops[ord,2],mean),-0.05,unique(pops[ord,2]),xpd=T)
-abline(v=cumsum(sapply(unique(pops[ord,2]),function(x){sum(pops[ord,2]==x)})),col=1,lwd=1.2)
+abline(v=cumsum(sapply(unique(pops[ord,3]),function(x){sum(pops[ord,3]==x)})),col=1:2,lwd=1.2)
+

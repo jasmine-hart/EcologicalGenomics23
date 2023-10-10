@@ -1,0 +1,10 @@
+PCAngsd v1.11
+Time: 10/10/2023 11:38:11
+Directory: /data/users/j/h/jhart12/myscripts
+Options:
+	-beagle /netfiles/ecogen/PopulationGenomics/ANGSD//allRS_poly.beagle.gz
+	-n_eig 3
+	-out /users/j/h/jhart12/myresults/ANGSD/allRS_poly
+	-selection
+	-snp_weights
+	-sites_save

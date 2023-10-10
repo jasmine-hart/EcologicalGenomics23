@@ -2,7 +2,7 @@ setwd("~/Documents/GitHub/EcologicalGenomics23/PopGenomics/results/")
 
 list.files()
 
-# FIrst lets read in the diversity stats
+# First lets read in the diversity stats
 theta <- read.table("2020.thetas",sep="\t",header=T)
 head(theta)
 
