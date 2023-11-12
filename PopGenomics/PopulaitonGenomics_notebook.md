@@ -22,6 +22,16 @@
 -   [Entry 6: 2023-09-27](#id-section6)
 -   [Entry 7: 2023-10-02](#id-section7)
 -   [Entry 8: 2023-10-04](#id-section8)
+-   [Entry 9: 2023-10-09](#id-section9)
+-   [Entry 10: 2023-10-11](#id-section10)
+-   [Entry 11: 2023-10-16](#id-section11)
+-   [Entry 12: 2023-10-18](#id-section12)
+-   [Entry 13: 2023-10-23](#id-section13)
+-   [Entry 14: 2023-10-25](#id-section14)
+-   [Entry 15: 2023-10-30](#id-section15)
+-   [Entry 16: 2023-11-01](#id-section16)
+-   [Entry 17: 2023-11-06](#id-section17)
+-   [Entry 18: 2023-11-08](#id-section18)
 
 ------    
 <div id='id-section1'/> 
@@ -117,3 +127,84 @@
 - We used the same `pcANGSD` results with the bioclim info
 - Plotting it using R
 - Then transferring it back to bash to identify significant loci.
+
+------    
+<div id='id-section9'/>   
+
+
+### Entry 9: 2023-10-09.
+- Orienting us to the data set.
+- Background and important info explained, to set the stage for subsequent data analysis.
+
+
+------    
+<div id='id-section10'/>   
+
+
+### Entry 10: 2023-10-11.
+- Using fastp again to clean the raw reads.
+- Transferring them to our computers.
+
+
+
+------    
+<div id='id-section11'/>   
+
+
+### Entry 11: 2023-10-16.
+- We used BUSCO to check the completeness of our assembly.
+- Salmon was used to map our reads to our de novo transcriptome assembly.
+
+
+------    
+<div id='id-section12'/>   
+
+
+### Entry 12: 2023-10-18.
+- We transferred this data to our personal devices and switched to R.
+- DeSEQ2 was used to begin analyzing gene expression
+- We imported the data set and then ran some basic statistical tests already loaded into R.
+
+------    
+<div id='id-section13'/>   
+
+
+### Entry 13: 2023-10-23.
+- We started using th DESeq package to define experimental design and set read length parameters.
+- Utilzing heat maps and SD to check the quality of the data clusters (`pheatmap` and `vsn`)
+- Then assembling this data into a simple PCA determined by genreation and treatment.
+
+------    
+<div id='id-section14'/>   
+
+
+### Entry 14: 2023-10-25.
+- Filtered the metadata and reads matrix by importing into DESeq.
+- Then we started analyzing these with `WGCNA`
+- This is the stage where I played with filter settings for HW2 (higher and lower).
+- We looked for outlier loci using to methods: hierarchical clustering and a PCA.
+- Setting the soft power threshold to cluster genes in a biologically meaningful way.
+- Then visualizing the pick power using scatter plots based on r^2 value.
+- Running WGCNA to get a dendrogram that explores the network properties of genes.
+
+
+------    
+<div id='id-section15'/>   
+
+
+### Entry 15: 2023-10-30.
+- We used eigenegenes to determine the number of genes for each module or functional categorization.
+- We then linked the modules and trait association.
+- Using a heatmap to demonstrate correlations between traits and modules.
+- Zooming in on gene expressions within modules of interest.
+
+
+------    
+<div id='id-section16'/>   
+
+
+### Entry 15: 2023-11-01.
+- Performed GO analysis on our DESeq results by generation and treatment.
+
+
+------  
