@@ -33,6 +33,7 @@
 -   [Entry 17: 2023-11-06](#id-section17)
 -   [Entry 18: 2023-11-08](#id-section18)
 
+
 ------    
 <div id='id-section1'/> 
 
@@ -203,8 +204,33 @@
 <div id='id-section16'/>   
 
 
-### Entry 15: 2023-11-01.
+### Entry 16: 2023-11-01.
 - Performed GO analysis on our DESeq results by generation and treatment.
+
+
+------  
+
+
+------    
+<div id='id-section16'/>   
+
+
+### Entry 17: 2023-11-06.
+- I missed class this week so I will reporting the SV unit tasks in the next entry.
+
+
+
+
+------    
+<div id='id-section18'/>   
+
+
+### Entry 18: 2023-11-08.
+- We filtered the bcf files (sorted by chromosome) using `bcftools`
+- Bcf files were converted to vcf files in the same step.
+- `Local PCA` was then run to map the filtered chromosomes to the host genome.
+- Regions (gene clusters/corners) of interest were further investigated using GO enrichment.
+- Corners of the MDS corresponded to important genomic regions.
 
 
 ------  
